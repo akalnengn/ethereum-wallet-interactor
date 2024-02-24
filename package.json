@@ -1,14 +1,34 @@
 {
-  "name": "ethereum-wallet-app",
+  "name": "ethereum-wallet-interactor",
   "version": "1.0.0",
-  "description": "",
+  "description": "A Node.js library for interacting with the Ethereum blockchain, enabling wallet balance checks and transactions.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/akalnengn/ethereum-wallet-interactor.git"
+  },
+  "keywords": [
+    "ethereum",
+    "blockchain",
+    "wallet",
+    "transaction",
+    "web3"
+  ],
+  "author": "akalnengn",
   "license": "ISC",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "homepage": "https://github.com/akalnengn/ethereum-wallet-interactor",
+  "contributors": [
+    {
+      "name": "akalnengn",
+      "email": "akalnengn@gmail.com"
+    }
+  ],
   "dependencies": {
     "dotenv": "^16.4.5",
     "ethereumjs-tx": "^2.1.2",
