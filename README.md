@@ -11,50 +11,65 @@
 
 ## Installation
 
-```bash
+To install `ethereum-wallet-interactor`, run the following command in your project directory:
+
 npm install ethereum-wallet-interactor
+
+This will add `ethereum-wallet-interactor` as a dependency to your project, and you can start using it right away.
 
 ## Quick Start
 
-Set up your `.env` file:
-Create a .env file in the root of your project and add your Ethereum network URL and private key:
+### Set up your `.env` file
+
+Create a `.env` file in the root of your project and add your Ethereum network URL and private key:
 
 INFURA_URL=https://mainnet.infura.io/v3/YOUR_INFURA_PROJECT_ID
+
 PRIVATE_KEY=your_private_key_here
 
-## Using the Library:
+
+### Using the Library
 
 Here's a quick example to get you started:
 
+```javascript
 const { getBalance, sendTransaction } = require('ethereum-wallet-interactor');
 
 // Check wallet balance
-getBalance('your_wallet_address').then(balance => console.log(balance));
+getBalance('your_wallet_address').then(balance => console.log(`Wallet Balance: ${balance} ETH`));
 
 // Send transaction
 sendTransaction('from_address', 'private_key', 'to_address', 'amount_in_ether')
-  .then(receipt => console.log(receipt))
-  .catch(error => console.error(error));
-
+  .then(receipt => console.log(`Transaction Successful: ${receipt.transactionHash}`))
+  .catch(error => console.error(`Transaction Failed: ${error.message}`));
+```
 
 ## Documentation
 
-For more detailed information about `ethereum-wallet-interactor` and how to use it, please visit our [official documentation page](https://github.com/akalnengn/ethereum-wallet-interactor/wiki). This documentation includes comprehensive guides, API references, and examples to help you get started.
+For detailed information about how to use `ethereum-wallet-interactor`, including setup, API references, and examples, please visit our [Documentation Page](#). Here, you'll find everything you need to start integrating Ethereum wallet functionalities into your application, enhancing your blockchain development journey.
 
 ## Contributing
 
-We welcome contributions from the community! If you're interested in contributing to `ethereum-wallet-interactor`, please read our [contributing guidelines](https://github.com/akalnengn/ethereum-wallet-interactor/CONTRIBUTING.md). This document provides information on how to report issues, suggest enhancements, and submit pull requests.
+We welcome contributions from everyone! If you're interested in improving `ethereum-wallet-interactor`, please take a look at our [Contributing Guide](#). Here are some ways you can contribute:
+
+- Reporting bugs and proposing feature requests by creating issues.
+- Submitting pull requests to help solve issues or add features.
+- Improving documentation to make it more accessible.
+- Providing feedback and suggestions on enhancements.
+
+Before contributing, please read through our guidelines where you'll find instructions on how to submit your pull requests and our code of conduct. We're excited to welcome you to our community!
 
 ## License
 
-`ethereum-wallet-interactor` is made available under the ISC License. For more information, please refer to the [LICENSE](https://github.com/akalnengn/ethereum-wallet-interactor/LICENSE) file in our repository.
+`ethereum-wallet-interactor` is made available under the [MIT License](LICENSE). This means you're free to use, modify, distribute, and in private or commercial projects, as long as you include the original copyright and license notice in any copy of the software/source. For more details, see the LICENSE file.
 
 ## Acknowledgments
 
-We would like to thank the following for their contributions, support, and resources:
+A big thank you to:
 
-- The [Ethereum Foundation](https://ethereum.org/) for developing and maintaining the Ethereum protocol.
-- The [Web3.js team](https://github.com/ethereum/web3.js/) for creating the Web3.js library, which this project heavily relies on.
-- All contributors who have submitted pull requests, reported bugs, or provided feedback.
+- The Ethereum community for providing the essential tools and frameworks that made this project possible.
+- All the contributors who've helped shape `ethereum-wallet-interactor` into what it is today.
+- Our users who've provided valuable feedback and support.
 
-Special thanks to our community of users and developers who inspire us to keep improving `ethereum-wallet-interactor`.
+This project stands on the shoulders of giants and is a testament to the power of collaboration and open-source spirit.
+
