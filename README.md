@@ -46,11 +46,11 @@ sendTransaction('from_address', 'private_key', 'to_address', 'amount_in_ether')
 
 ## Documentation
 
-For detailed information about how to use `ethereum-wallet-interactor`, including setup, API references, and examples, please visit our [Documentation Page](#). Here, you'll find everything you need to start integrating Ethereum wallet functionalities into your application, enhancing your blockchain development journey.
+For detailed information about how to use `ethereum-wallet-interactor`, including setup, API references, and examples. Here, you'll find everything you need to start integrating Ethereum wallet functionalities into your application, enhancing your blockchain development journey.
 
 ## Contributing
 
-We welcome contributions from everyone! If you're interested in improving `ethereum-wallet-interactor`, please take a look at our [Contributing Guide](#). Here are some ways you can contribute:
+We welcome contributions from everyone! If you're interested in improving `ethereum-wallet-interactor`. Here are some ways you can contribute:
 
 - Reporting bugs and proposing feature requests by creating issues.
 - Submitting pull requests to help solve issues or add features.
