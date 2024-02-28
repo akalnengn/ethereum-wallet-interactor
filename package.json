@@ -1,6 +1,6 @@
 {
   "name": "ethereum-wallet-interactor",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "A Node.js library for interacting with the Ethereum blockchain, enabling wallet balance checks and transactions.",
   "main": "index.js",
   "scripts": {
